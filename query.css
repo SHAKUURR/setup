@@ -1,0 +1,17 @@
+/* 930px */
+@media only screen and (max-width: 58.125em) {
+  .container {
+    width: 80%;
+  }
+
+  input {
+    width: 98%;
+  }
+
+}
+
+@media only screen and (max-width:28.625em) {
+  .box {
+    padding: 2rem;
+  }
+}

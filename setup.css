@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0E3F74;
+  width: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+}
+
+.logo {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.box {
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+
+}
+
+.header {
+  font-size: 2.4rem;
+  line-height: 56px;
+  color: #333333;
+  margin-bottom: 4rem;
+
+}
+
+form {
+  width: 100%;
+
+}
+
+input,
+input:focus {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  outline: none;
+  color: #999;
+  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  line-height: 17px;
+}
+
+input:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+input::placeholder {
+  color: #999;
+  font-family: 1.4rem;
+  font-family: 'Inter', sans-serif;
+}
+
+
+button {
+  background-color: #0E3F74;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-size: 1.4rem;
+  line-height: 17px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.8rem;
+  outline: none;
+  border: none;
+}
