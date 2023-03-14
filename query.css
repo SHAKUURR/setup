@@ -4,7 +4,8 @@
     width: 80%;
   }
 
-  input {
+  input,
+  input:focus {
     width: 98%;
   }
 
