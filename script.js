@@ -10,26 +10,31 @@ const pricing = document.querySelector(".pricing");
 
 const forthStep = document.getElementById("forth");
 
+const fifthStep = document.getElementById("fifth");
+
 circles[0].addEventListener("click", function () {
 	firstStep.classList.remove("hidden");
 	secondStep.classList.add("hidden");
 	forthStep.classList.add("hidden");
+	fifthStep.classList.add("hidden");
 	pricing.classList.add("hidden");
 	circles[0].classList.add("active");
 	circles[1].classList.remove("active");
 	circles[2].classList.remove("active");
 	circles[3].classList.remove("active");
-	circles[3].classList.remove("active");
+	circles[4].classList.remove("active");
 });
 circles[1].addEventListener("click", function () {
 	secondStep.classList.remove("hidden");
 	firstStep.classList.add("hidden");
 	pricing.classList.add("hidden");
 	forthStep.classList.add("hidden");
+	fifthStep.classList.add("hidden");
 	circles[1].classList.add("active");
 	circles[0].classList.remove("active");
 	circles[2].classList.remove("active");
 	circles[3].classList.remove("active");
+	circles[4].classList.remove("active");
 });
 
 circles[2].addEventListener("click", function () {
@@ -37,18 +42,35 @@ circles[2].addEventListener("click", function () {
 	secondStep.classList.add("hidden");
 	firstStep.classList.add("hidden");
 	forthStep.classList.add("hidden");
+	fifthStep.classList.add("hidden");
 	circles[2].classList.add("active");
 	circles[3].classList.remove("active");
 	circles[1].classList.remove("active");
 	circles[0].classList.remove("active");
+	circles[4].classList.remove("active");
 });
 
 circles[3].addEventListener("click", function () {
 	forthStep.classList.remove("hidden");
 	pricing.classList.add("hidden");
 	secondStep.classList.add("hidden");
+	fifthStep.classList.add("hidden");
 	firstStep.classList.add("hidden");
 	circles[3].classList.add("active");
+	circles[2].classList.remove("active");
+	circles[1].classList.remove("active");
+	circles[0].classList.remove("active");
+	circles[4].classList.remove("active");
+});
+
+circles[4].addEventListener("click", function () {
+	fifthStep.classList.remove("hidden");
+	forthStep.classList.add("hidden");
+	pricing.classList.add("hidden");
+	secondStep.classList.add("hidden");
+	firstStep.classList.add("hidden");
+	circles[4].classList.add("active");
+	circles[3].classList.remove("active");
 	circles[2].classList.remove("active");
 	circles[1].classList.remove("active");
 	circles[0].classList.remove("active");

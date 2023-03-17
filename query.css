@@ -19,13 +19,20 @@
 /* 910px */
 @media only screen and (max-width:56.875em) {
 
-  .container {
-    margin-top: 40rem;
+  html {
+    font-size: 50%;
   }
 
+  .steps {
+    width: 98%;
+  }
+
+  /* .container {
+    margin-top: 40rem;
+  } */
+
   .pricing-box {
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .pricing-header {
@@ -38,10 +45,62 @@
     margin-bottom: 2rem;
     width: 300px;
   }
+
+  .row1 {
+    justify-content: space-between;
+  }
+
+}
+
+/* 686px */
+@media only screen and (max-width:42.875em) {
+  .container {
+    margin-top: 40rem;
+  }
+
+  .pricing-box {
+    flex-direction: column;
+  }
+
+  .price {
+    width: 80%;
+  }
+
+  .preview {
+    width: 20%;
+  }
+
+  .choose {
+    padding: 1rem;
+  }
+
+  .choose a {
+    font-size: 1.3rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width:28.625em) {
   .box {
     padding: 2rem;
   }
+
+  .row1 {
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+
+  .preview-box {
+    margin-top: 0rem;
+  }
+
+  .preview {
+    width: 70%;
+    margin-bottom: 2.5rem;
+  }
+
+
 }
