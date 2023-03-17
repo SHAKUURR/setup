@@ -1,14 +1,38 @@
+/* 1186px */
+@media only screen and (max-width:74.125em) {
+  .container {
+    width: 90%;
+  }
+}
+
 /* 930px */
 @media only screen and (max-width: 58.125em) {
-  .container {
-    width: 80%;
-  }
+
 
   input,
   input:focus {
     width: 98%;
   }
 
+}
+
+/* 910px */
+@media only screen and (max-width:56.875em) {
+  .pricing-box {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .pricing-header {
+    width: 96%;
+  }
+
+  .price {
+    padding: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width:28.625em) {

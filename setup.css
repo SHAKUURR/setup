@@ -16,27 +16,73 @@ body {
 
 .container {
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 70%;
   margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* STEPS .........................*/
+.steps {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 3rem;
 
 }
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #4879AD;
+  color: #fff;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.indicator {
+  position: absolute;
+  height: 100%;
+  width: 0;
+}
+
 
 .logo {
-  text-align: center;
-  color: #fff;
+  width: 25%;
+  margin-right: 40%;
+  margin-left: 40%;
   margin-bottom: 2rem;
-  font-family: 'Nunito', sans-serif;
 }
 
+/* BOXXXXX .........................*/
 .box {
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 5rem;
-  width: 100%;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   margin-bottom: 5rem;
 
@@ -81,7 +127,7 @@ input::placeholder {
 }
 
 
-button {
+.button {
   background-color: #0E3F74;
   color: #fff;
   border-radius: 5px;
@@ -93,4 +139,109 @@ button {
   padding: 1.8rem;
   outline: none;
   border: none;
+}
+
+/* PRICING BOX ............*/
+.pricing-header {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  width: 60%;
+  line-height: 41px;
+  margin: 5rem auto;
+
+}
+
+.pricing-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.price {
+  background-color: #fff;
+  padding: 2.5rem;
+  padding-top: 3rem;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.price h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #333333;
+}
+
+.price p {
+  font-size: 1.4rem;
+  color: #263238;
+  line-height: 24px;
+  margin-bottom: 1.8rem;
+}
+
+.price-amount {
+  font-size: 1.8rem !important;
+}
+
+.price-select {
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 2.3rem;
+  color: #fff;
+  background-color: #0E3F74;
+  border-radius: 5.79px;
+  padding: 1.5rem 1.2rem;
+  width: 50%;
+  border: none;
+}
+
+.price-feature {
+  border-top: 0.3px solid #333333;
+  padding-top: 3rem;
+  font-size: 1.6rem;
+  display: block;
+
+}
+
+.features {
+
+  display: flex;
+  align-items: center;
+}
+
+.features img {
+  margin-right: 1.5rem;
+}
+
+.features-text {
+  margin-top: 1.5rem;
+  color: #181818;
+}
+
+/* FOURTH STEP ............*/
+select {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Inter', sans-serif
+}
+
+
+
+option:checked {
+  font-family: 'Inter', sans-serif !important;
+  margin-bottom: 3rem !important;
+}
+
+/* hidden */
+
+.hidden {
+  display: none;
 }

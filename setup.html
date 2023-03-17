@@ -13,8 +13,17 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="logo">Logo</h1>
-      <div class="box">
+      <img src="Logo.png" class="logo">
+      <div class="steps">
+        <span class="circle active">1</span>
+        <span class="circle">2</span>
+        <span class="circle">3</span>
+        <span class="circle">4</span>
+        <div class="progress-bar">
+          <span class="indicator"></span>
+        </div>
+      </div>
+      <div class="box" id="first">
         <h1 class="header">Setup Website</h1>
         <form>
           <input type="text" placeholder="First Name">
@@ -23,14 +32,95 @@
           <input type="tel" placeholder="Enter Phone Number">
           <input type="text" placeholder="Username">
           <input type="password" placeholder="Password">
+          <button class="button" type="submit">Next</button>
+        </form>
+      </div>
+      <div class="box hidden" id="second">
+        <h1 class="header">Setup Website</h1>
+        <form>
           <input type="text" placeholder="DB-Host">
           <input type="text" placeholder="DB-Username">
           <input type="password" placeholder="DB-Password">
           <input type="text" placeholder="DB= Database-Name">
-          <button type="submit">Setup</button>
+          <button class="button" type="submit">Next</button>
+        </form>
+      </div>
+      <div class="pricing hidden">
+        <h1 class="pricing-header">Start today, with basic or power plan. You choose!</h1>
+        <div class="pricing-box">
+          <div class="price">
+            <h3>Basic</h3>
+            <p class="price-text">Getting started is very easy, choose this plan for small businesses</p>
+            <p class="price-amount">N10,0000/month</p>
+            <button type="submit" class="price-select">Select Plan</button>
+            <p class="price-feature">10+ features, including:</p>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">USSD</p>
+            </div>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">Airtime Automation</p>
+            </div>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">Data Automation</p>
+            </div>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">No Cloud Service</p>
+            </div>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">Not too fast</p>
+            </div>
+          </div>
+          <div class="price">
+            <h3>Power</h3>
+            <p class="price-text">Getting started is very easy, choose this plan for small businesses</p>
+            <p class="price-amount">N20,0000/month</p>
+            <button type="submit" class="price-select">Select Plan</button>
+            <p class="price-feature">10+ features, including:</p>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">USSD</p>
+            </div>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">Airtime Automation</p>
+            </div>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">Data Automation</p>
+            </div>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">No Cloud Service</p>
+            </div>
+            <div class="features">
+              <img src="check.png">
+              <p class="features-text">Not too fast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box hidden" id="forth">
+        <h1 class="header">Setup Website</h1>
+        <form>
+          <select>
+            <option value="" disabled selected>Select a template</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+          <button class="button" type="submit">Next</button>
         </form>
       </div>
     </div>
 
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
